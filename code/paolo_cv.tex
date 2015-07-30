@@ -1,0 +1,410 @@
+\documentclass [10pt, letterpaper]{moderncv}
+%\moderncvstyle{classic}
+\usepackage{hyperref}
+\moderncvtheme[blue]{classic}
+%\moderncvtheme[blue]{casual}
+\usepackage [utf8]{inputenc}
+\usepackage [scale=0.8]{geometry}
+\usepackage{html}
+\usepackage{url}
+\AtBeginDocument {\recomputelengths}
+
+\firstname{J. Perry}
+\familyname{Evans}
+\address{2530 Market Street, Suite 1067}{Philadelphia, PA, 19104}
+\email{evansj@email.chop.edu}
+\phone{215 279 0262}
+%\extrainfo{\weblink{http://hostpathogen.blogspot.com/}}
+%\extrainfo{\htmladdnormallink{hostpathogen.blogspot.com}{http://hostpathogen.blogspot.com/}}
+
+\newcommand\myitem{\item[ $\circ$ ]\hspace*{.1em} }
+
+\begin {document}
+\maketitle
+
+%\def\ConTeXt{
+%  C
+%  \kern-.0333emo
+%  \kern-.0333emn
+%  \kern-0.667em\TeX
+%  \kern-0.333emt}
+
+\section {Education}
+
+\cventry {2010--2013}
+         {Postdoctoral Fellow}
+         {Yale Center for Medical Informatics; Yale University}
+         {New Haven, CT}
+         {}
+         {}
+
+\cventry {2005--2010}
+         {PhD in Genomics and Computational Biology}
+         {University of Pennsylvania}
+         {Philadelphia, PA}
+         {}
+         {}
+
+\cventry {2001--2005}
+         {BS in Computer Science}
+         {Rose--Hulman Institute of Technology}
+         {Terre Haute, IN}
+         {}
+         {}
+
+\section {Research Emphasis}
+\cvline {} {I am interested in using a deep analysis of tumor
+  sequencing data to understand tumor progression and find sequence
+  variants that driver cancer.}
+
+%% I am seeking a position where I can build on
+%%   my experience with exome sequence analysis.
+
+%and participating in
+%  the design of `wetlab' experiments.
+
+  %% seek a computational biology postdoctoral position where I can
+  %% explore new datasets and participate in `wetlab' experiments.
+
+%% I
+%%   wish to expand my work with virus--host interactions by examining
+%%   the evolution of viruses in response to host selective pressures.
+
+%% with human diseases by exploring and
+%%   integrating other high--dimensional datasets and participating in
+%%   the design of `wetlab' experiments.
+
+% virus--host interactions by including structural information in interaction prediction, learning how virus strain diversity affects interactions, and participating in `wetlab' experiments.
+
+%formingcollaborations with experimentalists who can test my hypotheses \textit{in vivo}.
+
+% Publications from a BibTeX file
+\nocite{*}
+%ieeetr
+\bibliographystyle{ieeetr}
+%\bibliographystyle{unsrt}
+\bibliography{publications}
+
+%% \section{Scientific Publications}
+%% {
+%%     \renewcommand{\section}[2]{\subsection{#2}}
+%%     \setbiblabelwidth{99}
+%%     \bibliographystyle{ieeetr}
+%%     \bibliography{publications}
+%% }
+
+\section {\href{http://bit.ly/9F9a08}{Talks and Posters}}
+
+\cventry {October, 2012}
+         {Estimating a gene's mutation burden by the number of synonymous base substitutions}
+         {IEEE International Conference on Bioinformatics and 
+          Biomedicine}
+         {Philadelphia, PA}
+         {}
+         {My talk compared methods for determining genes with significant nonsynonymous 
+          mutation burden based on the ratio of nonsynonymous to synonymous mutation frequencies.}
+
+\cventry {June, 2012}
+         {Evaluating melanoma whole exome sequences suggests new gene drivers}
+         {National Library of Medicine Informatics Training Conference 2012}
+         {Madison, WI}
+         {}
+         {My poster outlined novel methods for determining genes with significant mutation 
+          burden by examining the ratio of nonsynonymous to synonymous mutation frequencies.}
+
+\cventry {October, 2011}
+         {Exploring the use of social media to measure journal article impact}
+         {American Medical Informatics Association Annual Symposium}
+         {Washington DC}
+         {}
+         {My talk demonstrated that high impact journal articles are cited in Wikipedia pages, 
+          while low impact journal articles are not. I suggested that monitoring Wikipedia science 
+          updates would help one keep up with the latest science advances.}
+
+\cventry {March, 2010}
+         {Modularity in protein interaction network hubs predicts
+          viral host--pathogen interactions}
+         {Keystone Symposia, Biomolecular Interaction Networks: Function
+          and Disease}
+         {Qu\`{e}bec City, QC, Canada}
+         {}
+         {My poster demonstrated that human hub proteins 
+          interacting with HIV and HCV
+          have a preference between intra/intermodular hubs.}
+
+\cventry {November, 2009}
+         {MAPK docking motifs on HIV proteins}
+         {Greater Philadelphia Bioinformatics Alliance Annual Research Retreat}
+         {Philadelphia, PA}
+         {}
+         {My talk showed that standard MAPK docking motifs are
+          missing from 4 of 5 HIV proteins phosphorylated by ERK1/2, 
+          and suggested evidence
+          for alternative docking sites.}
+
+\cventry {November, 2008}
+         {Protein--protein interaction network alignment by quantitative
+          simulation}
+         {IEEE International Conference on Bioinformatics and 
+          Biomedicine}
+         {Philadelphia, PA}
+         {}
+         {My talk focused on the application of the 
+          quantitative simulation algorithm to the 
+          alignment of fly and yeast
+          protein networks.}
+
+\cventry {September, 2006} 
+         {Conservation patterns in
+  \emph{cis}--elements reveal co--evolution} 
+         {RECOMB Comparative
+  Genomics International Workshop} 
+         {Montr\`{e}al, QC, Canada} 
+         {} 
+         {My talk covered a project in which I utilized phylogenetic trees made
+          using five
+          mammalian species to present evidence for dependencies between
+          positions in JASPAR transcription factor binding sites.}
+
+\section {Experience}
+
+\cventry {2013--Current} {Bioinformatics Scientist} {Center for
+  Biomedical Informatics} {Children's Hospital of Philadelphia}
+         {Philadelphia, PA} {I collaborate with hospital scientists on
+           projects involving whole genome sequence analysis, protein
+           modifications, and virus-host interactions.}
+
+\cventry {2010--2013}
+         {Postdoctoral Fellow}
+         {Yale Center for Medical Informatics,
+          Yale University}
+         {New Haven, CT}
+         {}
+         {Worked closely with melanoma biologists to analyze exome sequence data from over 200 paired normal and tumor samples to discover new genes important for melanoma
+           \begin{itemize}%
+             \setlength{\itemindent}{1.5em}
+         \myitem Developed a pipeline to call novel somatic single nucleotide variations (SNVs) from exome sequences
+         \myitem Integrated public resources such as TCGA, COSMIC, and 1000 Genomes to evaluate SNV function
+         \myitem Developed a new method to identify common focal copy number variations (CNVs) across tumors
+         \myitem Developed novel tools to identify genes with a significant number of nonsynonymous mutations
+         \myitem Integrated expression, CNVs, SNVs, and indels to arrive at list of genes important for melanoma
+           \end{itemize}
+           }
+
+%% Michael Krauthammer's team leads the ongoing bioinformatics analysis of over 150 paired 
+%%           tumor/normal exomes sequenced as part of the Yale SPORE in Skin Cancer project.
+%%           Under his guidance, I developed new tools and methods to utilize exome sequence data to identify
+%%           novel somatic mutations in tumors, detect recurrent tumor copy number aberrations,
+%%           and find genes with a significant number of nonsynonymous somatic mutations. 
+%%           My work helped identity a list of candidate genes that might drive melanoma.
+
+\cventry {2012--2013}
+         {Consultant}
+         {FXI R\&D}
+         {Aston, PA}
+         {}
+         {Developed a database and website for FXI, a polyurethane foam company
+           \begin{itemize}
+             \setlength{\itemindent}{1.5em}
+             \myitem Developed an automated web-crawler to gather data and store it in a MySQL database
+             \myitem Built an interactive website for researchers to retrieve, monitor, and plot data
+             \myitem Guided an intern through Access Database construction and its interface with Excel
+             \end{itemize}
+         }
+
+\cventry {2006--2010}
+         {Research Assistant}
+         {Computer and Information Science Department, 
+          University of Pennsylvania}
+         {Philadelphia, PA}
+         {}
+         {Conducted dissertation research on biological networks under the direction of Lyle Ungar 
+           \begin{itemize}
+             \setlength{\itemindent}{1.5em}
+           \myitem Developed a new approach to align biological networks
+           \myitem Developed a method to predict virus-host protein interactions  based on protein and network motifs
+           \end{itemize}
+         }
+
+\cventry {2007--2010}
+         {Research Assistant}
+         {Center for Integrated Bioinformatics at Drexel University}
+         {Philadelphia, PA}
+         {}         
+         {Assisted professor Aydin Tozeren in running the
+          bioinformatics lab at Drexel
+          \begin{itemize}
+           \setlength{\itemindent}{1.5em}
+\myitem Helped write the narrative and preliminary studies section for multiple NIH grants
+\myitem Facilitated communication between labs at Drexel, UPenn, and George Washington University
+\myitem Helped administrate computational resources, including a 56 node IBM Bladecenter
+\end{itemize}
+}
+
+\cventry{2008--2010}
+        {Teaching Assistant}
+        {School of Biomedical Engineering, Drexel University}
+        {Philadelphia, PA}
+        {}
+        {Aided professor Aydin Tozeren in teaching his Quantitative Systems Biology graduate class
+         \begin{itemize}
+           \setlength{\itemindent}{1.5em}
+          \myitem Gave lectures describing the methodology behind my research
+           \myitem Guided students through computational labs I designed
+         \myitem Mentored students as they completed their final projects
+        \end{itemize}
+        }
+
+\cventry{August, 2008}
+        {Instructor}
+        {Greater Philadelphia Bioinformatics Alliance}
+        {Philadelphia, PA} {}
+        {Organized and taught a two week online introduction to Biopython
+        \begin{itemize}%
+          \setlength{\itemindent}{1.5em}
+        \myitem Developed course curriculum to cover sequence annotation, motif discovery, and database integration
+        \myitem Guided students through the development of Python scripts for bioinformatics analyses
+        \myitem Answered questions via email and graded assignments
+        \end{itemize} 
+        }
+
+%% \cventry{August, 2008}
+%%         {Instructor}
+%%         {GPBA Bioinformatics Programming Short Course}
+%%         {Philadelphia, PA}
+%%         {}
+%%         {The Greater Philadelphia Bioinformatics Alliance
+%%          is a consortium of regional research and academic
+%%          organizations dedicated to advancing bioinformatics.
+%%          I was the instructor for a two week online session
+%%          that guided participants through the development
+%%          of Python scripts for bioinformatics analysis.
+%%          The session included an introduction to Biopython
+%%          and focused on sequence annotation and function
+%%          prediction, the application of Markov models for
+%%          gene feature prediction, motif discovery, and 
+%%          database integration. I developed the curriculum,
+%%          answered questions via email, and graded
+%%          assignments.}
+
+%% \cventry {Spring Semester, 2006} 
+%%          {Research Assistant} 
+%%          {Genetics
+%%   Department, University of Pennsylvania} 
+%%          {Philadelphia, PA} 
+%%          {} 
+%%          {The Hannenhalli Lab is interested in the regulation of transcription 
+%%           and translation.  During my research rotation, I studied co--evolution
+%%           in transcription factor binding sites (TFBSs). For each position in
+%%           a TFBS, I constructed phylogenetic trees from five mammalian species.
+%%           I compared trees at different positions and investigated different 
+%%           metrics for capturing dependencies between the
+%%           nucleotide identities at these positions.}
+
+%% \cventry {Fall Semester, 2005}
+%%          {Research Assistant}
+%%          {Wistar Institute}
+%%          {Philadelphia, PA}
+%%          {}
+%%          {The Maley Lab at the Wistar Institute studies the evolution of cancer
+%%           using both \emph{in vitro} and \emph{in silico} techniques.  
+%%           While in the
+%%           lab, I studied selective interference in yeast with the goal of
+%%           applying my findings to cancer treatment.  I designed experiments
+%%           to observe the effects of selective interference in yeast under
+%%           three selective pressures. I developed agent--based models to
+%%           describe the results observed in my experiments.}
+
+\section {Technical Experience}
+
+\subsection{Extremely Proficient With}
+\cvline{languages}{Python, R/Bioconductor, JavaScript D3}
+\cvline{technologies}{Linux, OS X, MySQL, Bash Scripting, Git, Subversion, \LaTeX{}}
+
+\subsection{Have Experience With}
+\cvline{languages}{Java, PHP, JavaScript, Matlab, HTML, CSS, Ruby, C, C++, C\#, Scheme}
+\cvline{technologies}{Windows, TORQUE batch queuing system, JSON}
+
+\section {Awards}
+\cventry {June, 2012}
+         {Best Poster: Evaluating melanoma whole exome sequences suggests new gene drivers}
+         {National Library of Medicine Informatics Training Conference 2012}
+         {}
+         {}
+         {Awards were chosen by vote of the conference attendees each day.}
+\cventry {2010--2013}
+         {NLM Postdoctoral Fellow}
+         {National Library of Medicine Training Grant
+          in Biomedical Informatics}
+         {}
+         {}
+         {Grant awarded by Yale University.}
+\cventry {2007--2010}
+         {NIH Training Grant}
+         {National Human Genome Research Institute Training Grant
+          in Computational Genomics}
+         {}
+         {}
+         {Grant awarded by the University of Pennsylvania.}
+
+%% \pagebreak
+%% \section {Professional Activities}
+
+%% \cventry {2007--Current}
+%%          {Reviewer}
+%%          {}
+%%          {}
+%%          {}
+%%          {I have independently reviewed articles for Virology Journal and BMC Systems Biology. 
+%%           Under the supervision of Aydin Tozeren at Drexel University, I have reviewed NIH grants
+%%           and articles from BMC Bioinformatics, Frontiers in Bioscience, BMC Genomics, and Human Genomics.}
+
+%% \cventry {2007--Current}
+%%          %{\weblink{http://hostpathogen.blogspot.com/}}
+%%          {Open Notebook Science}
+%%          {\htmladdnormallink{Notebook Link: http://hostpathogen.blogspot.com/}{http://hostpathogen.blogspot.com/}}
+%%          {}
+%%          {}
+%%          {I promote open access science by maintaining a blog
+%%           and online computational biology resource.  The blog
+%%           serves as my lab notebook, and has accumulated over 
+%%           700 posts.}
+
+\section {References}
+\cventry {}{Available on request}{}{}{}{}
+%% \cventry {Postdoctoral advisor}
+%%          {Michael Krauthammer}
+%%          {Associate Professor of Pathology}
+%%          {Yale University, New Haven, CT}
+%%          {\htmladdnormallink{Website}{http://www.yalepath.org/research_labs/krauthammer/index.htm}}
+%%          {michael.krauthammer@yale.edu}
+
+%% \cventry {Thesis advisor}
+%%          {Lyle Ungar}
+%%          {Associate Professor of Computer and Information Science}
+%%          {University of Pennsylvania, Philadelphia, PA}
+%%          {\htmladdnormallink{Website}{http://www.cis.upenn.edu/~ungar/}}
+%%          {ungar@cis.upenn.edu}
+
+%% \cventry {Thesis co-advisor}
+%%          {Aydin Tozeren} 
+%%          {Distinguished Professor of Biomedical Engineering, Center for Integrated Bioinformatics, School of Biomedical Engineering, Science and Health Systems} 
+%%          {Drexel University, Philadelphia, PA}
+%%          {\htmladdnormallink{Website}{http://bioinformatics.biomed.drexel.edu/}}         
+%%          {aydin.tozeren@drexel.edu}
+         %Distinguished Professor and Director
+
+%\cventry {Rotation advisor}
+%         {Sridhar Hannenhalli}
+%         {Associate Professor of Genetics}
+%         {University of Pennsylvania, Philadelphia, PA}
+%         {\htmladdnormallink{Website}{http://cagr.pcbi.upenn.edu/}}
+%         {sridharh@pcbi.upenn.edu}
+
+
+\end {document}
+
+%% Under Dr. Tozeren's supervision, 
+%%           I have reviewed NIH grants
+%%           and articles from BMC Bioinformatics, Frontiers in Bioscience, 
+%%           BMC Genomics, and Human Genomics.

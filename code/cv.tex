@@ -1,11 +1,11 @@
 \documentclass [10pt, letterpaper]{moderncv}
 %\moderncvstyle{classic}
-\usepackage{hyperref}
+%\usepackage{html}
+%\usepackage{hyperref}
 \moderncvtheme[blue]{classic}
 %\moderncvtheme[blue]{casual}
 \usepackage [utf8]{inputenc}
 \usepackage [scale=0.8]{geometry}
-\usepackage{html}
 \usepackage{url}
 \AtBeginDocument {\recomputelengths}
 
@@ -29,14 +29,17 @@
 %  \kern-0.667em\TeX
 %  \kern-0.333emt}
 
+\section {Career Summary}
+\cvline {} {I examined virus-host interactions as a graduate student, focusing on protein domains and motifs that might mediate interactions between HIV and human proteins. As a postdoctoral fellow, I explored somatic mutations in melanoma exome sequences. In my current role at the Children's Hospital of Philadelphia, I provide computational support for research as part of the bioinformatics core. My projects include an analysis of germline pediatric variants, characterization of cysteine posttranslational modifications, operations research for blood transfusions, and an omics study of mitotic exit.}
+
 \section {Education}
 
-\cventry {2010--2013}
-         {Postdoctoral Fellow}
-         {Yale Center for Medical Informatics; Yale University}
-         {New Haven, CT}
-         {}
-         {}
+%% \cventry {2010--2013}
+%%          {Postdoctoral Fellow}
+%%          {Yale Center for Medical Informatics; Yale University}
+%%          {New Haven, CT}
+%%          {}
+%%          {}
 
 \cventry {2005--2010}
          {PhD in Genomics and Computational Biology}
@@ -52,127 +55,22 @@
          {}
          {}
 
-\section {Research Emphasis}
-\cvline {} {I am interested in using a deep analysis of tumor
-  sequencing data to understand tumor progression and find sequence
-  variants that driver cancer.}
-
-%% I am seeking a position where I can build on
-%%   my experience with exome sequence analysis.
-
-%and participating in
-%  the design of `wetlab' experiments.
-
-  %% seek a computational biology postdoctoral position where I can
-  %% explore new datasets and participate in `wetlab' experiments.
-
-%% I
-%%   wish to expand my work with virus--host interactions by examining
-%%   the evolution of viruses in response to host selective pressures.
-
-%% with human diseases by exploring and
-%%   integrating other high--dimensional datasets and participating in
-%%   the design of `wetlab' experiments.
-
-% virus--host interactions by including structural information in interaction prediction, learning how virus strain diversity affects interactions, and participating in `wetlab' experiments.
-
-%formingcollaborations with experimentalists who can test my hypotheses \textit{in vivo}.
-
-% Publications from a BibTeX file
-\nocite{*}
-%ieeetr
-\bibliographystyle{ieeetr}
-%\bibliographystyle{unsrt}
-\bibliography{publications}
-
-%% \section{Scientific Publications}
-%% {
-%%     \renewcommand{\section}[2]{\subsection{#2}}
-%%     \setbiblabelwidth{99}
-%%     \bibliographystyle{ieeetr}
-%%     \bibliography{publications}
-%% }
-
-\section {\href{http://bit.ly/9F9a08}{Talks and Posters}}
-
-\cventry {October, 2012}
-         {Estimating a gene's mutation burden by the number of synonymous base substitutions}
-         {IEEE International Conference on Bioinformatics and 
-          Biomedicine}
-         {Philadelphia, PA}
-         {}
-         {My talk compared methods for determining genes with significant nonsynonymous 
-          mutation burden based on the ratio of nonsynonymous to synonymous mutation frequencies.}
-
-\cventry {June, 2012}
-         {Evaluating melanoma whole exome sequences suggests new gene drivers}
-         {National Library of Medicine Informatics Training Conference 2012}
-         {Madison, WI}
-         {}
-         {My poster outlined novel methods for determining genes with significant mutation 
-          burden by examining the ratio of nonsynonymous to synonymous mutation frequencies.}
-
-\cventry {October, 2011}
-         {Exploring the use of social media to measure journal article impact}
-         {American Medical Informatics Association Annual Symposium}
-         {Washington DC}
-         {}
-         {My talk demonstrated that high impact journal articles are cited in Wikipedia pages, 
-          while low impact journal articles are not. I suggested that monitoring Wikipedia science 
-          updates would help one keep up with the latest science advances.}
-
-\cventry {March, 2010}
-         {Modularity in protein interaction network hubs predicts
-          viral host--pathogen interactions}
-         {Keystone Symposia, Biomolecular Interaction Networks: Function
-          and Disease}
-         {Qu\`{e}bec City, QC, Canada}
-         {}
-         {My poster demonstrated that human hub proteins 
-          interacting with HIV and HCV
-          have a preference between intra/intermodular hubs.}
-
-\cventry {November, 2009}
-         {MAPK docking motifs on HIV proteins}
-         {Greater Philadelphia Bioinformatics Alliance Annual Research Retreat}
-         {Philadelphia, PA}
-         {}
-         {My talk showed that standard MAPK docking motifs are
-          missing from 4 of 5 HIV proteins phosphorylated by ERK1/2, 
-          and suggested evidence
-          for alternative docking sites.}
-
-\cventry {November, 2008}
-         {Protein--protein interaction network alignment by quantitative
-          simulation}
-         {IEEE International Conference on Bioinformatics and 
-          Biomedicine}
-         {Philadelphia, PA}
-         {}
-         {My talk focused on the application of the 
-          quantitative simulation algorithm to the 
-          alignment of fly and yeast
-          protein networks.}
-
-\cventry {September, 2006} 
-         {Conservation patterns in
-  \emph{cis}--elements reveal co--evolution} 
-         {RECOMB Comparative
-  Genomics International Workshop} 
-         {Montr\`{e}al, QC, Canada} 
-         {} 
-         {My talk covered a project in which I utilized phylogenetic trees made
-          using five
-          mammalian species to present evidence for dependencies between
-          positions in JASPAR transcription factor binding sites.}
-
 \section {Experience}
 
-\cventry {2013--Current} {Bioinformatics Scientist} {Center for
-  Biomedical Informatics} {Children's Hospital of Philadelphia}
-         {Philadelphia, PA} {I collaborate with hospital scientists on
-           projects involving whole genome sequence analysis, protein
-           modifications, and virus-host interactions.}
+\cventry {2013--Current}
+         {Bioinformatics Scientist}
+         {Department of Biomedical and Health Informatics}
+         {Children's Hospital of Philadelphia}
+         {Philadelphia, PA}
+         {I  provide computational consultation and support in collaborations with  hospital investigators
+           \begin{itemize}%
+             \setlength{\itemindent}{1.5em}
+         \myitem Analysis of variants predisposing to pediatric cancer using ~600 whole genomes
+         \myitem Structural and functional analysis of cystein modifications
+         \myitem Simulations of blood transfusions to determine the feasability of genotyping blood donors
+         \myitem Chipseeq and rnaseq support for post mitotic reboot
+           \end{itemize}
+           }
 
 \cventry {2010--2013}
          {Postdoctoral Fellow}
@@ -315,15 +213,129 @@
 %%           three selective pressures. I developed agent--based models to
 %%           describe the results observed in my experiments.}
 
-\section {Technical Experience}
+%% I am seeking a position where I can build on
+%%   my experience with exome sequence analysis.
+
+%and participating in
+%  the design of `wetlab' experiments.
+
+  %% seek a computational biology postdoctoral position where I can
+  %% explore new datasets and participate in `wetlab' experiments.
+
+%% I
+%%   wish to expand my work with virus--host interactions by examining
+%%   the evolution of viruses in response to host selective pressures.
+
+%% with human diseases by exploring and
+%%   integrating other high--dimensional datasets and participating in
+%%   the design of `wetlab' experiments.
+
+% virus--host interactions by including structural information in interaction prediction, learning how virus strain diversity affects interactions, and participating in `wetlab' experiments.
+
+        %formingcollaborations with experimentalists who can test my hypotheses \textit{in vivo}.
+
+\section {Technical Skills}
 
 \subsection{Extremely Proficient With}
-\cvline{languages}{Python, R/Bioconductor, JavaScript D3}
-\cvline{technologies}{Linux, OS X, MySQL, Bash Scripting, Git, Subversion, \LaTeX{}}
+\cvline{languages}{Python, R/Bioconductor, JavaScript D3, Bash Scripting}
+\cvline{technologies}{Linux, OS X, MySQL, Git, Snakemake, \LaTeX{}, Sun Grid Engine}
+\cvline{datatypes}{Next-gen sequencing (WXS, WGS, Chipseq, RNA-seq), Protien/gene networks, Protein sequence and structure data}
+\cvline{mathematics}{Development and application of statistical and machine learning methods to problems in bioinformatics/comp bio, structural biology, systems biology, biostatistics, epidemiology, genetics}
 
 \subsection{Have Experience With}
-\cvline{languages}{Java, PHP, JavaScript, Matlab, HTML, CSS, Ruby, C, C++, C\#, Scheme}
-\cvline{technologies}{Windows, TORQUE batch queuing system, JSON}
+\cvline{languages}{Java, Go, PHP, JavaScript, Matlab, HTML, CSS, Ruby, C, C++, C\#, Scheme}
+\cvline{technologies}{Windows, TORQUE batch queuing system, JSON, Subversion}
+\cvline{datatypes}{CaptureC, Peptide counts, DNase hypersensitivity}
+
+% Publications from a BibTeX file
+\nocite{*}
+%ieeetr
+\bibliographystyle{ieeetr}
+%\bibliographystyle{unsrt}
+\bibliography{publications}
+
+%% \section{Scientific Publications}
+%% {
+%%     \renewcommand{\section}[2]{\subsection{#2}}
+%%     \setbiblabelwidth{99}
+%%     \bibliographystyle{ieeetr}
+%%     \bibliography{publications}
+%% }
+
+\section {\href{http://bit.ly/9F9a08}{Talks and Posters}}
+
+\cventry {October, 2012}
+         {Estimating a gene's mutation burden by the number of synonymous base substitutions}
+         {IEEE International Conference on Bioinformatics and 
+          Biomedicine}
+         {Philadelphia, PA}
+         {}
+         {My talk compared methods for determining genes with significant nonsynonymous 
+          mutation burden based on the ratio of nonsynonymous to synonymous mutation frequencies.}
+
+\cventry {June, 2012}
+         {Evaluating melanoma whole exome sequences suggests new gene drivers}
+         {National Library of Medicine Informatics Training Conference 2012}
+         {Madison, WI}
+         {}
+         {My poster outlined novel methods for determining genes with significant mutation 
+          burden by examining the ratio of nonsynonymous to synonymous mutation frequencies.}
+
+\cventry {October, 2011}
+         {Exploring the use of social media to measure journal article impact}
+         {American Medical Informatics Association Annual Symposium}
+         {Washington DC}
+         {}
+         {My talk demonstrated that high impact journal articles are cited in Wikipedia pages, 
+          while low impact journal articles are not. I suggested that monitoring Wikipedia science 
+          updates would help one keep up with the latest science advances.}
+
+\cventry {March, 2010}
+         {Modularity in protein interaction network hubs predicts
+          viral host--pathogen interactions}
+         {Keystone Symposia, Biomolecular Interaction Networks: Function
+          and Disease}
+         {Qu\`{e}bec City, QC, Canada}
+         {}
+         {My poster demonstrated that human hub proteins 
+          interacting with HIV and HCV
+          have a preference between intra/intermodular hubs.}
+
+\cventry {November, 2009}
+         {MAPK docking motifs on HIV proteins}
+         {Greater Philadelphia Bioinformatics Alliance Annual Research Retreat}
+         {Philadelphia, PA}
+         {}
+         {My talk showed that standard MAPK docking motifs are
+          missing from 4 of 5 HIV proteins phosphorylated by ERK1/2, 
+          and suggested evidence
+          for alternative docking sites.}
+
+\cventry {November, 2008}
+         {Protein--protein interaction network alignment by quantitative
+          simulation}
+         {IEEE International Conference on Bioinformatics and 
+          Biomedicine}
+         {Philadelphia, PA}
+         {}
+         {My talk focused on the application of the 
+          quantitative simulation algorithm to the 
+          alignment of fly and yeast
+          protein networks.}
+
+\cventry {September, 2006} 
+         {Conservation patterns in
+  \emph{cis}--elements reveal co--evolution} 
+         {RECOMB Comparative
+  Genomics International Workshop} 
+         {Montr\`{e}al, QC, Canada} 
+         {} 
+         {My talk covered a project in which I utilized phylogenetic trees made
+          using five
+          mammalian species to present evidence for dependencies between
+          positions in JASPAR transcription factor binding sites.}
+
+
 
 \section {Awards}
 \cventry {June, 2012}
@@ -370,8 +382,8 @@
 %%           serves as my lab notebook, and has accumulated over 
 %%           700 posts.}
 
-\section {References}
-\cventry {}{Available on request}{}{}{}{}
+%% \section {References}
+%% \cventry {}{Available on request}{}{}{}{}
 %% \cventry {Postdoctoral advisor}
 %%          {Michael Krauthammer}
 %%          {Associate Professor of Pathology}

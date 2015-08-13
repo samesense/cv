@@ -1,4 +1,4 @@
-# cv
-latex cv
+# cv in latex using moderncv
+Run snakefile sf.py
 
-Go back to desktop and find bib w/ bold name.
+
